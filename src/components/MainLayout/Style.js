@@ -12,4 +12,5 @@ export const SLayout = css`
     height: 600px;
     box-shadow: 0px 0px 20px 0px #777;
     background-color: #fff;
+    overflow: hidden;
 `;
