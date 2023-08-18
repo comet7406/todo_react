@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
 export const SLayout = css`
@@ -6,6 +5,7 @@ export const SLayout = css`
     position: absolute;
     top: 45%;
     left: 50%;
+    display: flex;
     border-radius: 20px;
     padding: 20px;
     width: 1024px;
