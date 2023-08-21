@@ -1,8 +1,9 @@
 import { css } from "@emotion/react";
 
-export const SContainer = (isMainSidebarShow, isShow, isRightSidebarShow) => {
+export const SContainer = (isMainSidebarShow, isRightSidebarShow) => {
 
     let width = 944;
+
     if(isMainSidebarShow) {
         width -= 210;
     }

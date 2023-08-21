@@ -4,7 +4,6 @@ import { Global } from "@emotion/react";
 import * as S from "./styles/commons";
 import { Route, Routes } from "react-router-dom";
 import Today from "./pages/Today/Today";
-import { useState } from "react";
 import Calendar from "./pages/Calendar/Calendar";
 
 function App() {
