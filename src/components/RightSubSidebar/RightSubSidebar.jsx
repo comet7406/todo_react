@@ -2,22 +2,17 @@ import React from 'react';
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import * as S from "./Style";
-import MainContainer from '../../components/MainContainer/MainContainer';
 import { useRecoilState } from 'recoil';
 import { isRightSubSidebarState } from '../../store/sidebarStore';
 
-function Today(props) {
+function RightSubSidebar({ children }) {
     const [ isRightSubSidebar, setIsRightSubSidebar ] = useRecoilState(isRightSubSidebarState);
 
-    const handleOpenClick = () => {
-        setIsRightSubSidebar(!isRightSubSidebar);
-    }
-
     return (
-        <MainContainer>
-            <button onClick={handleOpenClick}>열기</button>
-        </MainContainer>
+        <div css={S.SLayout(isRightSubSidebar)}>
+            {children}
+        </div>
     );
 }
 
-export default Today;
+export default RightSubSidebar;
